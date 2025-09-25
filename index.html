@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Random Dog</title>
+  <title>Dog Breed Image Generator</title>
 </head>
 <body>
-  <h1>Random Dog Image</h1>
-  <button id="loadDog">Get Dog</button>
+  <h1>Dog Breed Browser</h1>
+  <label for="breedSelect">Choose a breed:</label>
+  <select id="breedSelect"></select>
+  <button id="getDog">Show Dog</button>
+  
   <br><br>
   <img id="dogImg" alt="A random dog" width="300">
-  
+    <!-- <img> creates a spot for an image -->
+    <!-- id="dogImg" lets JavaScript set its src dynamically-->
   <script src="app.js"></script>
+    <!-- script src links the JavaScript file app.js -->
+    <!-- Placing it at the end of <body> ensures -->
+    <!-- the HTML elements load before the script runs --> 
+    <!-- (so document.getElementById finds them)-->
 </body>
 </html>
